@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "It's ALIVE"
+date:   2017-05-02 14:24:23 -0400
+categories: jekyll update blog
+---
+## {{page.title}}
+
+A few pots of coffee later, and I'm finally rolling with Jekyll.  Coming from Octopress should have made this an easy transition, but it was not for me.  I suppose I could have just started by reading the docs, but I jumped in thinking I would completely understand the framework. 
+
+No matter!  Here we are.  
+
+**Why I chose Jekyll** 
+ - Static HTML/CSS (*security*)
+ - I need more Ruby in my life
+ - Fuck Wordpress
+ - Markdown is wonderful
+
+
+
