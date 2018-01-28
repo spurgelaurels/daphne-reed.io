@@ -1,0 +1,14 @@
+<md:EntityDescriptor entityID="splunk-vidyard"  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"  xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata">  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"  AuthnRequestsSigned="false"  WantAssertionsSigned="true">  <md:KeyDescriptor>  <ds:KeyInfo>  <ds:X509Data>  <ds:X509Certificate>
+MIICLTCCAZYCCQCz69D1946P4DANBgkqhkiG9w0BAQUFADB/MQswCQYDVQQGEwJV
+UzELMAkGA1UECAwCQ0ExFjAUBgNVBAcMDVNhbiBGcmFuY2lzY28xDzANBgNVBAoM
+BlNwbHVuazEXMBUGA1UEAwwOU3BsdW5rQ29tbW9uQ0ExITAfBgkqhkiG9w0BCQEW
+EnN1cHBvcnRAc3BsdW5rLmNvbTAeFw0xNjA0MjkxOTMxMDJaFw0xOTA0MjkxOTMx
+MDJaMDcxIDAeBgNVBAMMF1NwbHVua1NlcnZlckRlZmF1bHRDZXJ0MRMwEQYDVQQK
+DApTcGx1bmtVc2VyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDEOqJj+vdA
+lFPcFlwqRyRi+o7yf5oTSnqGwIOM8WVN9ggchMiy/kYUgaxE0NKMkhsSOAWkugUp
+mEnzHJVS4yUMxWs85eoZUFlA/rSVyJB+E/d/lfQ3joR3Ce4347RibRdrGmcOWkJe
+4jYSK6E66uMh99GezQzwfCVnILZ25OVxFQIDAQABMA0GCSqGSIb3DQEBBQUAA4GB
+ACrnUq1qB1IlbaXbpeo0XUBuHq3yomaJXz5PghB1ce+tIcqtW6cnj0fAVucxiA6Q
+yVBj1tWa072eA5DhGI9E3RT2nIPD4iAtRdjhmi8PLb/MQJjLCYqj30SjNm79/pFN
+d2B9oVU7KlNuJl8RvG/L9YB07IUkJ7uzlPaTMfYPmERT
+</ds:X509Certificate>  </ds:X509Data>  </ds:KeyInfo>  </md:KeyDescriptor>  <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat> <md:SingleLogoutService  Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"  Location="https://vidyard.splunkcloud.com/saml/logout"  index="0">  </md:SingleLogoutService>  <md:AssertionConsumerService  Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"  Location="https://vidyard.splunkcloud.com/saml/acs"  index="0">  </md:AssertionConsumerService>  </md:SPSSODescriptor> </md:EntityDescriptor> 
