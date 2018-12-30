@@ -3,7 +3,7 @@
 #  TAG EXTRACTOR
 #  awk '/tags:/,/\---/ { if ($0 !~ /(\---|tags\:)/) { print } }' < * | sort -u
 
-WWWROOT="/www"
+WWWROOT="/www/daphne-reed.io"
 
 if [ -z "$1" ]
   then
