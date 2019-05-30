@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://daphne-reed.io/One-Year-HRT/</loc>
-<lastmod>2017-08-16T12:25:21-04:00</lastmod>
+<loc>https://daphne-reed.io/75-Days/</loc>
+<lastmod>2018-04-11T11:27:21-04:00</lastmod>
 </url>
 <url>
 <loc>https://daphne-reed.io/One-Year-HRT/</loc>
@@ -94,13 +94,13 @@
 <loc>https://daphne-reed.io/</loc>
 </url>
 <url>
-<loc>https://daphne-reed.io/projects/</loc>
-</url>
-<url>
 <loc>https://daphne-reed.io/about/</loc>
 </url>
 <url>
 <loc>https://daphne-reed.io/posts/</loc>
+</url>
+<url>
+<loc>https://daphne-reed.io/projects/</loc>
 </url>
 <url>
 <loc>https://daphne-reed.io/assets/files/Vidyard%20DevOps%20Manifesto.pdf</loc>
