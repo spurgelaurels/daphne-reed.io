@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Security Tools List"
+categories: [security]
+tags: [security, tools]
+---
+
+Below is a living list of security tools I use for daily testing
+
+**Scanners**
+
+[OpenVAS](http://www.openvas.org/)
+
+[Brakeman](https://brakemanscanner.org/)
+
+
+**Fuzzers**
+
+[American Fuzzy Lop](http://lcamtuf.coredump.cx/afl/)
+
+
+**Data Analytics and Storage**
+
+[OSSIM](https://www.alienvault.com/products/ossim)
+
+**Testing**
+
+[Clair](https://github.com/coreos/clair)
+
+[Metasploit](https://www.metasploit.com/)

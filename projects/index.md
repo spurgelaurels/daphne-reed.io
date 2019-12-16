@@ -1,8 +1,7 @@
 ---
-layout: project
-title: All Projects
-excerpt: "A List of Projects"
-comments: false
+layout: page 
+title: Projects
+permalink: /projects/
 ---
 
-Nothing to see here yet....
+# TESTING PROJECTS

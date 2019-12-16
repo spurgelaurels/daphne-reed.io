@@ -3,18 +3,11 @@
 #  TAG EXTRACTOR
 #  awk '/tags:/,/\---/ { if ($0 !~ /(\---|tags\:)/) { print } }' < * | sort -u
 
-WWWROOT="/www/daphne-reed.io"
+JEKYLLROOT="/home/daphne/src/daphne-reed.io"
+PAGESROOT="/home/daphne/src/spurgelaurels.github.io"
 
-if [ -z "$1" ]
-  then
-    echo "No argument supplied"
-    exit 1
-fi
-
+cd $JEKYLLROOT
 bundle exec jekyll build &&
-for HOST in "$@"
-  do 
-    scp -r _site/* $HOST:$WWWROOT
-  done
-
+cd _site && cp -rp * $PAGESROOT
+cd $PAGESROOT && git add . && git commit -m "Automatic deploy" && git push
 

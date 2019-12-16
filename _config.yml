@@ -9,7 +9,7 @@ background:         'assets/img/winterTree.png'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 #url:                http://127.0.0.1:4000
-url:                https://daphne-reed.io
+url:                https://www.daphne-reed.io
 
 # Jekyll
 permalink:          /:title/
@@ -40,7 +40,7 @@ disqus_shortname:   spurgelaurels
 #bing-verify:
 #email:
 twitter:            spurgelaurels
-facebook:           daphnelydiareed
+facebook:           spurgelaurels
 github-url:         spurgelaurels
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 linkedin:          spurgelaurels
