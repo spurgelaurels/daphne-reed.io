@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Unspoken Vulnerabilities"
+categories: [security]
+tags: [security, tools]
+---
+
+Read any book on Information Security and you're going to get the typical and (valid) mostly-technical vulnerabilities which affect most, if not all organizations. These fundamentals and concepts, if left untreated and unsecured, will of course be a massively high risk to your organization. 
+
+But what some of the softer vulnerabilities? These could be challenges for either you as a person, a colleague (as a person), or your business organization as a whole.  
+
+_This post inspired by [GAD's Network Warrior](https://www.oreilly.com/library/view/network-warrior-2nd/9781449307974/), and the extension of knowledge from Cisco exams into the pragmatism that only experience can provide._
+
+**Ego**
+Infosec has been notoriously and historically an industry full of cowboys and people who take themselves quite seriously. It's hard not to, when you consider that most of our vernacular and concepts have their roots in military or governmental bodies. Most of the issues we and our colleagues deal with extend beyond corporate security and well into the topic of national security. This is not an unwarranted importance; until we've achieved that unicorn of absolute trust and security, the race between technical innovation and keeping security debt in check could have serious consequences to humankind. 
+
+But it's all too easy to fall victim to a notion of over-importance of the self or the mission, because not all missions are that important, and not all threats are realized. I receive dozens of prospecting emails a day from vendors trying to convince me that protecting my website is of equal importance to protecting my own children. News stories carry up messaging that technical vulnerabilities in IoT will invariably result in the collapse of our power grid. There is a truth in the messaging, but it's seriously overinflated. 
+
+This is not to diminish the importance of our roles, of our programs, and of our industry, but serves to highlight how easy it is to consider security as more important than it actually might be. And when you walk into a planning meeting, spouting doom and gloom into the room you will quickly find yourself not invited to subsequent planning meetings. 
+
+Keeping your ego, and the ego of your program in check will keep you in line with the mission without over-stepping and causing conflict or deflation of goals. 
+
+
+**Budget**
+SIEM, SOC, WAF, Audits, Layer8 firewalls...  This shit adds up quick. 
+I feel like every few months I need to go to my organization and ask for more money for a thing that I don't actually want to implement. I don't want a SIEM! It's going to tell me about more problems I have to deal with. I don't want another IPS! They're painful to configure and the output is just more problems to deal with! 
+
+Long ago, I used to relish getting a new firewall or server, and the sound of the fans spinning up for the first time before racking it into its new home. Now, the installation of a SIEM into an environment is a daunting task that will inevitably lead to more daunting tasks. Take a look at my Business Case pitch for those servers and compare it to my Business Case pitch for a SIEM. The tooling that a security team needs is just that: a NEED. Our tools don't make our lives easier, and they aren't sexy. Rather, they're tools used to aggregate more problems into action items and they're expensive. 
+
+When you're at an organization that prefers to ignore issues, technical debts, or risks, you're going to have a really challenging time obtaining budget for the things that you yourself may not even want. 
+
+My advice if you're in a need-not-want situation? Share your specific risks with a vendor you've chosen, and let them sell their services to your budget-deciders.  
+
+
+**Expecting too much from users / Too many constraints**
+Infosec 101; too complex of a requirement for a password will force users to write it on a post-it note and stick it to their monitor. 
+
+Infosec 102; too simple of a password requirement will force an APT to break in, encrypt all your stuff, and sell it back to you. 
+
+When I worked in Network Security, we had a well developed firewall policy, and a team of 4 would churn through firewall port requests every day. Open port 4506 for application X. Open port 23678 for application Y. Close port 2355 because application Z was decommissioned 15 months ago and no one told us. All of these ports required a change control request, CAB approval, and had to be scheduled for a maintenance window. It was a lot of work, but I guess we felt protected. 
+
+We had a malware hit. This malware wasn't detected by our firewalls, by our malware detection appliance, and was SOMEHOW getting around our incredibly strict policy around firewall ports! 
+
+It was going out port 443. 
+
+In that same environment, one day while walking around the office, I saw several staff playing an MMO which I knew had port requirements that we did not allow in that environment. When they saw me, they quickly ALT-TAB'd back to work as if I was their manager. My curiousity was too much, and I asked. 
+
+Turned out, instead of ask for the port to be opened (which would have been denied, no question), they set up SSH forwarding on their machines and connected to their home networks to bounce to the MMO servers. All of that ITIL planning, CAB approving, and daily grind on the port-treadmill was for naught. These were workarounds that were not easily prevented. 
+
+If you forget to install a gate, someone will cut a hole in your fence.  

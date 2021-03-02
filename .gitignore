@@ -1,2 +1,5 @@
 .sass-cache/
 .jekyll-metadata
+vendor
+deploy.sh
+

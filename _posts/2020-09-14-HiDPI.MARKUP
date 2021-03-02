@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "HiDPI with i3 on an X1 Carbon" 
+categories: [linux, notes]
+tags: [linux, notes]
+---
+
+Three laptops in a row now and I've struggled with HiDPI. I've written scripts, I've abandoned my favourite wm (i3-gaps) for gnome-mate, and I've done so many bloody things that I lost track of what worked and what didn't. 
+
+With my new X1 Carbon (gen7) I had a chance to start fresh, and it turned out that it was this simple...  
+
+Thank you to [dougie.io](https://dougie.io/linux/hidpi-retina-i3wm/) for the post. 
+
+
+`~/.Xresources`
+{{ "{% highlight javascript " }}%}  
+Xft.dpi: 192
+URxvt.font: xft:FiraMono-Regular:size=10
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+{{ "{% endhighlight " }}%}  
+
+
+`~/.profile`
+{{ "{% highlight javascript " }}%}  
+export GDK_SCALE=2
+export GDK_DPI_SCALE=0.5
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+{{ "{% endhighlight " }}%}  
